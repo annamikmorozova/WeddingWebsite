@@ -67,3 +67,24 @@
   justify-content: space-evenly;
   flex-direction: row;
 }
+
+.size-image {
+  height: 200px;
+}
+
+.size-image-amazon {
+  height: 150px;
+}
+
+.row-registry {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media(max-width: 980px){
+  .row-registry {
+    display: flex;
+    flex-direction: column;
+  }
+}
