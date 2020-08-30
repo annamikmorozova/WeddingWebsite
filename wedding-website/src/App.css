@@ -34,6 +34,11 @@
   font-family: "Parisienne", regular;
 }
 
+.registry-title {
+  color: #fc89ac;
+  text-align: center;
+}
+
 .date {
   color: #fc89ac;
   font-family: "Parisienne", cursive;
