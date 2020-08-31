@@ -1,4 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Parisienne:regular);
+@import url(https://fonts.googleapis.com/css?family=Cabin:regular,italic,500,500italic,600,600italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Allura:regular);
 
 .App {
   text-align: center;
@@ -29,9 +31,14 @@
   color: #61dafb;
 }
 
+.hashtag {
+  font-family: "Cabin", regular;
+}
+
 .title {
   color: #fc89ac;
-  font-family: "Parisienne", regular;
+  font-family: "Allura", regular;
+  margin-bottom: 5px;
 }
 
 .registry-title {
@@ -41,7 +48,9 @@
 
 .date {
   color: #fc89ac;
-  font-family: "Parisienne", cursive;
+  font-family: "Cabin", regular;
+  margin-top: 5px;
+  text-decoration: underline overline;
 }
 
 .our-story {
@@ -87,4 +96,64 @@
     display: flex;
     flex-direction: column;
   }
+}
+
+.new-section {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 4em;
+  font-weight: 100;
+}
+
+.click-animations {
+  margin-top: 35px;
+  padding-bottom: 20px;
+  background: #f6f8fa;
+}
+
+.click-animations input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  height: 50px;
+  width: 50%;
+  font-size: 30px;
+  outline: none;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.click-animations textarea {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+  font-size: 30px;
+  outline: none;
+  border: 2px solid transparent;
+  resize: none;
+  transition: 0.3s;
+}
+
+.click-animations input:focus,
+.click-animations textarea:focus {
+  border-color: #30cc8b;
+}
+
+.click-animations button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background: #30cc8b;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.click-animations button:active {
+  transform: scale(0.95);
 }
