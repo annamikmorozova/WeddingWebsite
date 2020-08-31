@@ -20,8 +20,9 @@ export const newRsvp = rsvp => {
 export const newSongThunk = data => {
 	return async dispatch => {
 		try {
-			const song = await axios.post("/api/songs");
-			dispatch(newRsvp(song.data));
+			const song = await axios.post("/api/songs", data);
+			console.log(song)
+			dispatch(newSong(song.data));
 		} catch (error) {
 			console.log(error);
 		}

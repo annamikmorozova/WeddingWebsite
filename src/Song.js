@@ -25,6 +25,7 @@ class Song extends React.Component {
 
     render() {
         console.log(this.state)
+        console.log(this.props)
         return (
             <div class="click-animations">
                 <h2 class="new-section">Submit a song</h2>
