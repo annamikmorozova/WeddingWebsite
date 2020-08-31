@@ -1,7 +1,4 @@
-"use strict";
-
-const db = require("../server/db");
-const {Song, RSVP} = require("../server/db/models");
+const db = require("./server/db");
 
 async function seed() {
 	try {
@@ -10,23 +7,6 @@ async function seed() {
 		});
 		console.log("db synced!");
 
-		let rsvps = [...rsvps];
-
-		await Promise.all(
-			rsvps.map(rsvp => {
-				return RSVP.create(rsvp);
-			})
-		);
-
-		const songs = [...songs];
-
-		await Promise.all(
-			songs.map(song => {
-				return Song.create(song);
-			})
-		);
-
-		console.log(`seeded successfully`);
 	} catch (error) {
 		console.log(error);
 	}

@@ -13,10 +13,6 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 module.exports = app;
 
-if (process.env.NODE_ENV === "test") {
-	after("close the session store", () => sessionStore.stopExpiringSessions());
-}
-
 if (process.env.NODE_ENV !== "production") require("../secrets");
 
 passport.serializeUser((user, done) => done(null, user.id));
