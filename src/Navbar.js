@@ -9,7 +9,7 @@ function Navbar() {
       <header className="header-container">
         <h1 className="title">Erik and Anna</h1>
         <p className="date">9/18/2021</p>
-        <div className="hashtag">< FaHashtag />AnnaGetYeomans</div>
+        <div className="hashtag">< FaHashtag />AnnaGetYEOmans</div>
         <div className="row-navbar">
         <a href="/" className="navbar-style grow">Erik + Anna</a>
          <a href="/venue" className="navbar-style grow">Venue</a>

@@ -6,7 +6,7 @@ import bloomies from "./bloomingdales.jpg";
 function Registry() {
     return (
         <div>
-            <h1 className="registry-title">Registry</h1>
+            <div className="registry-title">Registry</div>
             <div className="row-registry">
                 <a href="https://www.amazon.com/wedding/share/anna-get-yeomans" target="_blank" rel="noopener noreferrer">
                     <img src={amazonRegistry} alt="amazon-registry" className="size-image-amazon"/>
@@ -15,6 +15,7 @@ function Registry() {
                     <img src={bloomies} alt="bloomies" className="size-image"/>
                 </a>
             </div>
+            <div className="registry-title">Honeymoon Fund</div>
         </div>
     )
 }

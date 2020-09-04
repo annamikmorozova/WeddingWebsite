@@ -16,20 +16,22 @@ class Song extends React.Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.newSongThunk(this.state);
+        const form = new FormData();
+        form.append("name", this.state.name);
+        form.append("artist", this.state.artist);
+        this.props.newSongThunk(form);
     }
 
     handleInputChange(event) {
+        event.preventDefault();
         this.setState({[event.target.name]: event.target.value});
       }
 
     render() {
-        console.log(this.state)
-        console.log(this.props)
         return (
             <div class="click-animations">
                 <h2 class="new-section">Submit a song</h2>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <input 
                         type="text" 
                         name="name"

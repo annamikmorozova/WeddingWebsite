@@ -20,8 +20,8 @@ export const newRsvp = rsvp => {
 export const newSongThunk = data => {
 	return async dispatch => {
 		try {
-			const song = await axios.post("/api/songs", data);
-			console.log(song)
+			const {song} = await axios.post("/api/songs", data);
+			console.log("SONG", song)
 			dispatch(newSong(song.data));
 		} catch (error) {
 			console.log(error);
@@ -50,7 +50,7 @@ export default function reducer(state = initialState, action) {
 		case CREATE_NEW_SONG:
 			return {
 				...state,
-				songs: action.song
+				songs: [...action.song]
 			};
 		case CREATE_NEW_RSVP:
 			return {

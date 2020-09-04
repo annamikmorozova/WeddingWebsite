@@ -35,6 +35,18 @@
   font-family: "Cabin", regular;
 }
 
+.main-page-title {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Cabin", regular;
+  font-size: 32px;
+}
+
+.main-page-text {
+  font-family: "Cabin", regular;
+}
+
 .title {
   color: #fc89ac;
   font-family: "Allura", regular;
@@ -42,8 +54,11 @@
 }
 
 .registry-title {
-  color: #fc89ac;
-  text-align: center;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Cabin", regular;
+  font-size: 32px;
 }
 
 .date {
@@ -54,7 +69,8 @@
 }
 
 .our-story {
-  margin: 20px
+  margin: 40px;
+  text-align: start;
 }
 
 .row-navbar {
@@ -88,8 +104,16 @@
   height: 200px;
 }
 
+.size-image:hover {
+  height: 250px;
+}
+
 .size-image-amazon {
   height: 150px;
+}
+
+.size-image-amazon:hover {
+  height: 200px;
 }
 
 .row-registry {
@@ -188,7 +212,7 @@
   font-size: 32px;
 }
 
-.book-rooms {
+.check-out-venue {
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -197,12 +221,17 @@
   color: black;
 }
 
-.book-rooms:hover {
+.check-out-venue:hover {
   color: #000067
 }
 
-.grow { transition: all .1s ease-in-out; }
-.grow:hover { transform: scale(1.1); }
+.grow { 
+  transition: all .1s ease-in-out; 
+}
+
+.grow:hover { 
+  transform: scale(1.1); 
+}
 
 .map {
   border: 0;

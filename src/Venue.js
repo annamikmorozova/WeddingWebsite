@@ -7,7 +7,7 @@ export default class Venue extends React.Component {
         return (
             <div>
                 <div className="title-glen-cove">Glen Cove Mansion</div>
-                <a className="book-rooms grow" target="_blank" rel="noopener noreferrer" href="https://themansionatglencove.com/">Book a Room</a>
+                <a className="check-out-venue grow" target="_blank" rel="noopener noreferrer" href="https://themansionatglencove.com/">Check out the Venue</a>
                 <div className="glen-cove">
                     <img className="image-glen-cove" src={GlenCove} alt="GlenCove" />
                 </div>
