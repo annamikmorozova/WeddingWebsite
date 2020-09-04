@@ -5,6 +5,7 @@ import EA from "./EA";
 import Navbar from "./Navbar";
 import Song from "./Song";
 import RSVP from "./RSVP.js";
+import Venue from "./Venue.js";
 
 export default class Routes extends Component {
 
@@ -17,6 +18,7 @@ export default class Routes extends Component {
 					<Route exact path="/registry" component={Registry} />
 					<Route exact path="/song-request" component={Song} />
 					<Route exact path="/rsvp" component={RSVP} />
+					<Route exact path="/venue" component={Venue} />
 				</Switch>
 			</div>
 		);

@@ -42,7 +42,7 @@ class Song extends React.Component {
                         type="text" 
                         name="artist"
                         placeholder="Artist" 
-                        id="artist" 
+                        id="artist"
                         value={this.state.artist}
                         onChange={this.handleInputChange}
                     />

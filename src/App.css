@@ -65,6 +65,13 @@
 
 .navbar-style {
   margin: 10px;
+  padding-bottom: 10px;
+  color: pink;
+  text-decoration: none;
+}
+
+.navbar-style:hover{
+  color: #fc89ac;
 }
 
 .images {
@@ -93,8 +100,11 @@
 
 @media(max-width: 980px){
   .row-registry {
-    display: flex;
+    display: block;
     flex-direction: column;
+    max-width: 600px;
+    max-height: 100px;
+    text-align: end;
   }
 }
 
@@ -156,4 +166,51 @@
 
 .click-animations button:active {
   transform: scale(0.95);
+}
+
+.glen-cove {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.image-glen-cove {
+  box-shadow: 0 10px 15px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+}
+
+.title-glen-cove {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Cabin", regular;
+  font-size: 32px;
+}
+
+.book-rooms {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  font-family: "Cabin", regular;
+  font-size: 22px;
+  color: black;
+}
+
+.book-rooms:hover {
+  color: #000067
+}
+
+.grow { transition: all .1s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.map {
+  border: 0;
+  box-shadow: 0 10px 15px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.map-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }

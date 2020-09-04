@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import {FaHashtag} from "react-icons/fa";
-
+ 
 function Navbar() {
   
   return (
@@ -11,11 +11,11 @@ function Navbar() {
         <p className="date">9/18/2021</p>
         <div className="hashtag">< FaHashtag />AnnaGetYeomans</div>
         <div className="row-navbar">
-        <a href="/" className="navbar-style">Erik + Anna</a>
-         <a href="/venue" className="navbar-style">Venue</a>
-          <a href="/registry" className="navbar-style">Registry</a>
-          <a href="/song-request" className="navbar-style">Submit a song</a>
-          <a href="/rsvp" className="navbar-style">RSVP</a>
+        <a href="/" className="navbar-style grow">Erik + Anna</a>
+         <a href="/venue" className="navbar-style grow">Venue</a>
+          <a href="/registry" className="navbar-style grow">Registry</a>
+          <a href="/song-request" className="navbar-style grow">Submit a song</a>
+          <a href="/rsvp" className="navbar-style grow">RSVP</a>
         </div>
       </header>
     </div>
