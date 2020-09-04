@@ -1,31 +1,11 @@
 import axios from "axios";
 
-const CREATE_NEW_SONG = "CREATE_NEW_SONG";
 const CREATE_NEW_RSVP = "CREATE_NEW_RSVP";
-
-export const newSong = song => {
-	return {
-		type: CREATE_NEW_SONG,
-		song
-	};
-};
 
 export const newRsvp = rsvp => {
 	return {
 		type: CREATE_NEW_RSVP,
 		rsvp
-	};
-};
-
-export const newSongThunk = data => {
-	return async dispatch => {
-		try {
-			const {song} = await axios.post("/api/songs", data);
-			console.log("SONG", song)
-			dispatch(newSong(song.data));
-		} catch (error) {
-			console.log(error);
-		}
 	};
 };
 
@@ -41,17 +21,11 @@ export const newRsvpThunk = data => {
 };
 
 const initialState = {
-	songs: [],
 	rsvps: []
 };
 
 export default function reducer(state = initialState, action) {
 	switch (action.type) {
-		case CREATE_NEW_SONG:
-			return {
-				...state,
-				songs: [...action.song]
-			};
 		case CREATE_NEW_RSVP:
 			return {
 				...state,

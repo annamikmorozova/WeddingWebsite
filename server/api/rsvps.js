@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const {RSVP} = require("../db/models");
 
-app.post("/", (req, res) => 
+router.post("/", (req, res) => 
     RSVP.create({
         firstName: req.body.firstName,
         lastName: req.body.lastName,

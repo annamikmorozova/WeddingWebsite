@@ -6,10 +6,14 @@ const session = require("express-session");
 const passport = require("passport");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const db = require("./db");
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const helmet = require('helmet');
+
 const sessionStore = new SequelizeStore({
 	db
 });
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 const app = express();
 module.exports = app;
 
@@ -28,6 +32,8 @@ passport.deserializeUser(async (id, done) => {
 
 const createApp = () => {
 	app.use(morgan("dev"));
+	app.use(cors());
+	app.use(helmet())
 
 	app.use(express.json());
 	app.use(
@@ -37,6 +43,7 @@ const createApp = () => {
 	);
 
 	app.use(compression());
+	app.use(bodyParser.json());
 
 	app.use(
 		session({
@@ -61,11 +68,11 @@ const createApp = () => {
 		}
 	});
 
+	app.use("/api", require("./api"));
+
 	app.use("*", (req, res) => {
 		res.sendFile(path.join(__dirname, "..", "public/index.html"));
 	});
-
-	app.use(express.static(path.join(__dirname, "uploads")));
 
 	app.use((err, req, res, next) => {
 		console.error(err);
