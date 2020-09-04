@@ -8,8 +8,12 @@ function Registry() {
         <div>
             <h1 className="registry-title">Registry</h1>
             <div className="row-registry">
-                <img src={amazonRegistry} alt="amazon-registry" className="size-image-amazon"/>
-                <img src={bloomies} alt="bloomies" className="size-image"/>
+                <a href="https://www.amazon.com/wedding/share/anna-get-yeomans" target="_blank" rel="noopener noreferrer">
+                    <img src={amazonRegistry} alt="amazon-registry" className="size-image-amazon"/>
+                </a>
+                <a href="https://www.bloomingdales.com/registry/wedding/guest/?registryId=7213572" target="_blank" rel="noopener noreferrer">
+                    <img src={bloomies} alt="bloomies" className="size-image"/>
+                </a>
             </div>
         </div>
     )
