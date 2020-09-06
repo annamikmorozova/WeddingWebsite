@@ -23,7 +23,7 @@ export default class Song extends React.Component {
     handleInputChange(event) {
         event.preventDefault();
         this.setState({[event.target.name]: event.target.value});
-      }
+    }
 
     render() {
         return (

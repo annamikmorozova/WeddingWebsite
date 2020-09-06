@@ -243,3 +243,9 @@
   justify-content: center;
   margin-bottom: 50px;
 }
+
+.pictures-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
