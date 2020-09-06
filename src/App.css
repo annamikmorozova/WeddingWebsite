@@ -26,6 +26,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+@media(min-height: 1228px) {
+  .header-img {
+    background-image:  url(header.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+  }
+}
+
+.header-img {
+  background-image:  url(header.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 325px;
+  background-size: cover;
+}
 
 .App-link {
   color: #61dafb;

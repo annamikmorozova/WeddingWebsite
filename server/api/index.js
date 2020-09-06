@@ -2,6 +2,7 @@ const router = require("express").Router();
 
 router.use("/songs", require("./songs"));
 router.use("/rsvps", require("./rsvps"));
+router.use("/images", require("./images"));
 
 router.use((req, res, next) => {
 	const error = new Error("Not Found");

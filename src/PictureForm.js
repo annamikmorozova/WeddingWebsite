@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-// import {connect} from "react-redux";
+import axios from "axios";
 
 export default class PictureForm extends React.Component {
     constructor() {
@@ -14,12 +14,19 @@ export default class PictureForm extends React.Component {
 		this.handleFileChange = this.handleFileChange.bind(this);
     }
 
-    handleSubmit(event) {
-		event.preventDefault();
-		const form = new FormData();
-		form.append("description", this.state.description);
-		form.append("image", this.state.image);
-		// this.props.newPictureForm(form);
+    async handleSubmit(event, data) {
+        event.preventDefault();
+        const form = new FormData();
+        form.append("description", this.state.description);
+        form.append("image", this.state.image);
+        await axios({
+            method: "post",
+            url: "/api/images",
+            data,
+            config: {headers: {"Content-Type": "multipart/form-data"}}
+        });
+        await axios.get("/api/images");
+        alert("picture's added")
 	}
 
 	handleInputChange(event) {
@@ -36,41 +43,35 @@ export default class PictureForm extends React.Component {
         return (
             <div class="click-animations">
                 <h2 class="new-section">Submit a picture with us</h2>
-                <form className="pictures-form">
+                <form className="pictures-form" onSubmit={this.handleSubmit}>
+
+                <label htmlFor="description">Tell us about the picture</label>
                     <input 
-                        id="image" 
-                        className="form-control"
+                        id="description" 
                         type="text" 
+                        name="description"
                         required=""
                         placeholder="Where and when was it?" 
-                        value={this.state.image}
+                        value={this.state.description}
                         onChange={this.handleInputChange}
                     />
                     
-                    <div className="col-md-6 form-labels-style">
+                   
 					<label htmlFor="img">Select Image</label>
-					<input
-						type="file"
-						name="image"
-						className="form-control"
-						id="image"
-						accept="image/*"
-						placeholder="image"
-						required=""
-						onChange={this.handleFileChange}
-					/>
-				</div>
+                        <input
+                            type="file"
+                            name="image"
+                            className="form-control"
+                            id="image"
+                            accept="image/*"
+                            placeholder="image"
+                            required=""
+                            onChange={this.handleFileChange}
+                        />
+
+	                    <button>Send</button>
                 </form>
-                <button>Send</button>
             </div>
         )
     }
 }
-
-// const mapDispatchToProps = dispatch => {
-// 	return {
-// 		newPictureForm: data => dispatch(newPictureForm(data))
-// 	};
-// };
-
-// export default connect(null, mapDispatchToProps)(PictureForm);
