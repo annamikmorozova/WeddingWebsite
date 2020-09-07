@@ -26,22 +26,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-@media(min-height: 1228px) {
-  .header-img {
-    background-image:  url(header.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 300px;
-    background-size: cover;
-  }
-}
 
 .header-img {
-  background-image:  url(header.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  height: 325px;
-  background-size: cover;
+  height: auto;
+  width: 100%;
 }
 
 .App-link {
@@ -103,7 +91,7 @@
   text-decoration: none;
 }
 
-.navbar-style:hover{
+.navbar-style:hover {
   color: #fc89ac;
 }
 
@@ -139,7 +127,7 @@
   justify-content: space-evenly;
 }
 
-@media(max-width: 980px){
+@media(max-width: 980px) {
   .row-registry {
     display: block;
     flex-direction: column;
@@ -242,12 +230,12 @@
   color: #000067
 }
 
-.grow { 
-  transition: all .1s ease-in-out; 
+.grow {
+  transition: all .1s ease-in-out;
 }
 
-.grow:hover { 
-  transform: scale(1.1); 
+.grow:hover {
+  transform: scale(1.1);
 }
 
 .map {
