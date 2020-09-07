@@ -27,27 +27,29 @@ export default class Song extends React.Component {
 
     render() {
         return (
-            <div class="click-animations">
-                <h2 class="new-section">Submit a song</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input 
-                        type="text" 
-                        name="name"
-                        placeholder="Name" 
-                        id="name" 
-                        value={this.state.name}
-                        onChange={this.handleInputChange}
-                    />
-                    <input 
-                        type="text" 
-                        name="artist"
-                        placeholder="Artist" 
-                        id="artist"
-                        value={this.state.artist}
-                        onChange={this.handleInputChange}
-                    />
-                    <button type="submit">Send</button>
-                </form>
+            <div className="click-animations">
+                <div className="form-background">
+                    <h2 class="new-section">Submit a song</h2>
+                    <form onSubmit={this.handleSubmit}>
+                        <input 
+                            type="text" 
+                            name="name"
+                            placeholder="Name" 
+                            id="name" 
+                            value={this.state.name}
+                            onChange={this.handleInputChange}
+                        />
+                        <input 
+                            type="text" 
+                            name="artist"
+                            placeholder="Artist" 
+                            id="artist"
+                            value={this.state.artist}
+                            onChange={this.handleInputChange}
+                        />
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         )
     }

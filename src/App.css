@@ -164,9 +164,8 @@
   display: block;
   margin: 20px auto;
   padding: 10px;
-  height: 50px;
   width: 50%;
-  font-size: 30px;
+  font-size: 22px;
   outline: none;
   transition: 0.3s;
 }
@@ -267,4 +266,34 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.labels-text {
+  font-family: "Cabin", regular;
+  font-size: 22px;
+}
+
+.file-input {
+  font-size: 22px;
+}
+
+.form-background {
+  background: #fc89ac;
+  margin: 100px;
+  padding-bottom: 30px;
+  box-shadow: 0 10px 15px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cash-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cash-options {
+  padding: 20px;
+  font-family: "Cabin", regular;
+  font-size: 22px;
+  justify-content: center;
 }
