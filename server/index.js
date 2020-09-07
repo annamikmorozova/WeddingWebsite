@@ -8,7 +8,6 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 const db = require("./db");
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const helmet = require('helmet');
 
 const sessionStore = new SequelizeStore({
 	db
@@ -33,17 +32,14 @@ passport.deserializeUser(async (id, done) => {
 const createApp = () => {
 	app.use(morgan("dev"));
 	app.use(cors());
-	app.use(helmet())
-
-	app.use(express.json());
-	app.use(
-		express.urlencoded({
-			extended: true
-		})
-	);
 
 	app.use(compression());
 	app.use(bodyParser.json());
+	app.use(
+		bodyParser.urlencoded({
+			extended: false
+		})
+	);
 
 	app.use(
 		session({
@@ -57,6 +53,7 @@ const createApp = () => {
 	app.use(passport.session());
 
 	app.use(express.static(path.join(__dirname, "..", "public")));
+	app.use(express.static(path.join(__dirname, "..", "uploads")));
 
 	app.use((req, res, next) => {
 		if (path.extname(req.path).length) {

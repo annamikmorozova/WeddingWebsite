@@ -14,18 +14,18 @@ export default class PictureForm extends React.Component {
 		this.handleFileChange = this.handleFileChange.bind(this);
     }
 
-    async handleSubmit(event, data) {
+    async handleSubmit(event) {
         event.preventDefault();
         const form = new FormData();
         form.append("description", this.state.description);
         form.append("image", this.state.image);
+        console.log(...form.entries())
         await axios({
             method: "post",
             url: "/api/images",
-            data,
+            data: form,
             config: {headers: {"Content-Type": "multipart/form-data"}}
         });
-        await axios.get("/api/images");
         alert("picture's added")
 	}
 
