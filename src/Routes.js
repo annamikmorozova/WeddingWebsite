@@ -8,6 +8,7 @@ import RSVP from "./RSVP.js";
 import Venue from "./Venue.js";
 import PictureForm from "./PictureForm";
 import AnotherSong from "./AnotherSong";
+import AnotherPicture from "./AnotherPicture";
 
 export default class Routes extends Component {
 
@@ -23,6 +24,7 @@ export default class Routes extends Component {
 					<Route exact path="/venue" component={Venue} />
 					<Route exact path="/submit-a-picture" component={PictureForm} />
 					<Route exact path="/another-song" component={AnotherSong} />
+					<Route exact path="/another-picture" component={AnotherPicture} />
 				</Switch>
 			</div>
 		);

@@ -2,13 +2,15 @@ import React from "react";
 import './App.css';
 import axios from "axios";
 import Footer from "./Footer";
+import { Redirect } from "react-router-dom";
 
 export default class PictureForm extends React.Component {
     constructor() {
         super();
         this.state = {
             description: "",
-            image: ""
+            image: "",
+            redirect: false
         }
         this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,7 +29,9 @@ export default class PictureForm extends React.Component {
             data: form,
             config: {headers: {"Content-Type": "multipart/form-data"}}
         });
-        alert("picture's added")
+        this.setState({
+            redirect: true
+        })
 	}
 
 	handleInputChange(event) {
@@ -41,6 +45,9 @@ export default class PictureForm extends React.Component {
 	}
 
     render() {
+        if (this.state.redirect) {
+            return <Redirect to="/another-picture" />
+        }
         return (
             <div class="click-animations">
                 <div className="form-background">

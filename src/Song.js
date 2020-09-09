@@ -44,6 +44,7 @@ export default class Song extends React.Component {
                             name="name"
                             placeholder="Name" 
                             id="name" 
+                            required=""
                             value={this.state.name}
                             onChange={this.handleInputChange}
                         />
@@ -52,6 +53,7 @@ export default class Song extends React.Component {
                             name="artist"
                             placeholder="Artist" 
                             id="artist"
+                            required=""
                             value={this.state.artist}
                             onChange={this.handleInputChange}
                         />
