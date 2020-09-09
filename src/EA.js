@@ -24,7 +24,6 @@ function EA() {
         <div className="images-row">
           <img src={inPark} alt="inPark" className="images"/>
           <img src={washingtonDC} alt="washingtonDC" className="images"/>
-          <img src={cute} alt="cute" className="images"/>
         </div>
 
         <h2 className="main-page-title">How He Asked</h2> 
