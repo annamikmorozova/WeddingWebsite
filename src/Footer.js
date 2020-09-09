@@ -8,7 +8,7 @@ export default function Footer() {
             <a className="github" 
                 href="https://github.com/annamikmorozova/WeddingWebsite" 
                 target="_blank" 
-                rel="noopener noreferrer">Github:
+                rel="noopener noreferrer">Github
             </a>
         </div>
     )

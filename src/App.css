@@ -187,6 +187,15 @@
   color: #000067;
 }
 
+.new-section-2 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 100;
+  font-family: "Allura", regular;
+  color: #000067;
+  margin: 7px;
+}
+
 .click-animations {
   margin-top: 35px;
   padding-bottom: 20px;
