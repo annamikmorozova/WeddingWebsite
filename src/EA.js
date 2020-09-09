@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 import washingtonDC from "./washingtonDC.JPG";
-import Virginia from "./Virginia.JPG";
+import cute from "./cute.JPG";
+import inPark from "./park.png";
+import Footer from "./Footer";
 
 function EA() {
   
@@ -9,22 +11,20 @@ function EA() {
     <div className="App">
       <div className="our-story">
         <div className="main-page-title">How We Met</div>
-        <p className="main-page-text">Erik and I met in March 2019 at our friends’ (Aibika and Peter) house party. 
-          Peter is actually Erik's boss while Aibika is my best friend. 
-          He invited all of his team and my friend invited a couple of girlfriends.
-          We hit it off right away playing Connect 4, exchanged numbers, and went to our first date 3 days later. 
-          He took me to a nice cocktail bar and our first date lasted 6 hours. 
-          We went to 2 more dates the same week, that’s how you know you just met someone really special. 
-          It felt right from the very beginning. I knew I wanted to marry the guy from the first date.</p>
+          <p className="main-page-text">Erik and I met in March 2019 at our friends’ (Aibika and Peter) house party. 
+            We hit it off right away playing Connect 4, exchanged numbers, and went to our first date 3 days later. 
+            He took me to a nice cocktail bar and our first date lasted 6 hours. 
+            We went to 2 more dates the same week, that’s how you know you just met someone really special.</p>
 
-        <p className="main-page-text">Erik quickly became my best friend. We told each other I love you on the field in Central Park. 
-          We did everything you could imagine together from concerts and trips to rock climbing and 5k runs. 
-          I think it is hard to meet someone who is very similar to you. Erik and I are like the same person, 
-          but complete each other with the differences. We moved in together after 7 months of dating and every day has been the best so far.</p>
-        
+          <p className="main-page-text">Erik quickly became my best friend. We told each other I love you on the field in Central Park. 
+            We did everything you could imagine together from concerts and trips to rock climbing and 5k runs. 
+            I think it is hard to meet someone who is very similar to you. Erik and I are like the same person, 
+            but complete each other with the differences. We moved in together after 7 months of dating and every day has been the best so far.</p>
+
         <div className="images-row">
+          <img src={inPark} alt="inPark" className="images"/>
           <img src={washingtonDC} alt="washingtonDC" className="images"/>
-          <img src={Virginia} alt="Virginia" className="images"/>
+          <img src={cute} alt="cute" className="images"/>
         </div>
 
         <h2 className="main-page-title">How He Asked</h2> 
@@ -58,6 +58,7 @@ function EA() {
         <p className="main-page-text">We went for a walk, after all, got some beers, and took a lot of pictures (Thank you, Alisa). 
           We also got champagne to return to our rooftop and celebrate with the sunset.</p>
       </div>
+        <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import axios from "axios";
+import Footer from "./Footer";
 
 export default class PictureForm extends React.Component {
     constructor() {
@@ -73,6 +74,7 @@ export default class PictureForm extends React.Component {
 	                        <button>Send</button>
                     </form>
                 </div>
+                <Footer />
             </div>
         )
     }

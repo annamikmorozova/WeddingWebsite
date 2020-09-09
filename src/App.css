@@ -50,6 +50,7 @@
 
 .main-page-text {
   font-family: "Cabin", regular;
+  font-size: 18px;
 }
 
 .title {
@@ -83,8 +84,13 @@
 }
 
 .our-story {
-  margin: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 100px;
+  margin-top: 20px;
   text-align: start;
+  box-shadow: 1px -4px 5px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px;
 }
 
 .row-navbar {
@@ -114,13 +120,29 @@
 }
 
 .images {
-  height: 300px;
+  height: auto;
+  width: 300px;
 }
 
 .images-row {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 914px) {
+  .images-row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 914px) {
+  .images {
+    height: auto;
+    width: 300px;
+  }
 }
 
 .size-image {
@@ -289,9 +311,11 @@
 
 .form-background {
   background: #fc89ac;
-  margin: 100px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
   padding-bottom: 30px;
-  box-shadow: 0 10px 15px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 1px -4px 5px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
 
 .cash-row {
@@ -347,4 +371,13 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.github {
+  color: black;
+  padding-bottom: 30px;
+}
+
+.footer {
+  text-align: -webkit-center;
 }

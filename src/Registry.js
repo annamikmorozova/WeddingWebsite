@@ -7,6 +7,7 @@ import {SiChase} from "react-icons/si";
 import { Icon, InlineIcon } from '@iconify/react';
 import venmoIcon from '@iconify/icons-mdi/venmo';
 import {RiMoneyDollarBoxLine} from "react-icons/ri";
+import Footer from "./Footer";
 
 export default function Registry() {
 
@@ -50,6 +51,7 @@ export default function Registry() {
                     </a>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
-import GlenCove from "./glen-cove.jpg"
+import GlenCove from "./glen-cove.jpg";
+import Footer from "./Footer";
 
 export default class Venue extends React.Component {
     render() {
@@ -24,6 +25,7 @@ export default class Venue extends React.Component {
                         tabindex="0">
                     </iframe>
                 </div>
+                <Footer />
             </div>
         )
     }

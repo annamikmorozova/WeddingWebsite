@@ -1,6 +1,7 @@
 import React from "react";
 import './App.css';
 import axios from "axios";
+import Footer from "./Footer";
 
 export default class Song extends React.Component {
     constructor() {
@@ -50,6 +51,7 @@ export default class Song extends React.Component {
                         <button type="submit">Send</button>
                     </form>
                 </div>
+                <Footer />
             </div>
         )
     }
