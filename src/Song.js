@@ -2,13 +2,15 @@ import React from "react";
 import './App.css';
 import axios from "axios";
 import Footer from "./Footer";
+import { Redirect } from "react-router-dom";
 
 export default class Song extends React.Component {
     constructor() {
         super();
         this.state = {
             name: "",
-            artist: ""
+            artist: "",
+            redirect: false
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -17,8 +19,9 @@ export default class Song extends React.Component {
     async handleSubmit(event) {
         event.preventDefault();
         await axios.post("/api/songs", this.state)
-        alert("song added")
-        //TODO: do something cool here
+        this.setState({
+            redirect: true
+        })
     }
 
     handleInputChange(event) {
@@ -27,6 +30,10 @@ export default class Song extends React.Component {
     }
 
     render() {
+        if (this.state.redirect) {
+            return <Redirect to="/another-song" />
+        }
+
         return (
             <div className="click-animations">
                 <div className="form-background">

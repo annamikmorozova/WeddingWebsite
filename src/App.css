@@ -217,7 +217,6 @@
 .click-animations input:focus,
 .click-animations textarea:focus {
   border-color: #000067;
-  background-color: #fc89ac;
 }
 
 .click-animations button {
@@ -235,7 +234,8 @@
 }
 
 .click-animations button:hover {
-  background: #fc89ac;
+  background: white;
+  color: #000067
 }
 
 .click-animations button:active {
