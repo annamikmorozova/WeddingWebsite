@@ -11,10 +11,11 @@ function EA() {
     <div className="App">
       <div className="our-story">
         <div className="main-page-title">How We Met</div>
-          <p className="main-page-text">Erik and I met in March 2019 at our friends’ (Aibika and Peter) house party. 
+          <p className="main-page-text">We met in March 2019 at our friends’ (Aibika and Peter) house party. 
             We hit it off right away playing Connect 4, exchanged numbers, and went to our first date 3 days later. 
-            He took me to a nice cocktail bar and our first date lasted 6 hours. 
-            We went to 2 more dates the same week, that’s how you know you just met someone really special.</p>
+            Erik took me to Crimson & Rye, a nice cocktail bar in UES, and the first date lasted 6 hours. 
+            We went to 2 more dates the same week, that’s how you know you just met someone really special.
+            It felt like a fairytale from the first date and it still feels the same way now!</p>
 
           <p className="main-page-text">Erik quickly became my best friend. We told each other I love you on the field in Central Park. 
             We did everything you could imagine together from concerts and trips to rock climbing and 5k runs. 
@@ -28,13 +29,13 @@ function EA() {
 
         <h2 className="main-page-title">How He Asked</h2> 
         <p className="main-page-text">We had a Quarantine proposal! My sister came to stay with us for a few days and I had no idea Erik already had the ring. 
-          I always wanted my sister to see me getting engaged. 
+          I always wanted Alisa to see me getting engaged. 
           It was our third work-from-home week since NYC was shut down and I was sure he didn’t even think about it yet.</p>
         
         <p className="main-page-text">Since the quarantine started, we tried going for runs and walks to stay healthy when the weather would allow. 
           It was 70 degrees that Friday and it seemed like a perfect day to go for a run. 
           When I asked Erik if he wants to go for a run, he offered to go for a walk instead. 
-          My sister and I got excited since we could finally dress up (the quarantine generally prevents you from dressing up) and take some pictures. 
+          Alisa and I got excited since we could finally dress up (the quarantine generally prevents you from dressing up) and take some pictures. 
           Erik liked the idea and started getting ready as well.</p>
 
         <p className="main-page-text">When Erik wore a button-down shirt I started feeling a little suspicious, but I thought I am just a crazy woman and told myself to calm down. 
