@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import washingtonDC from "./washingtonDC.JPG";
-import cute from "./cute.JPG";
 import inPark from "./park.png";
 import Footer from "./Footer";
 
@@ -10,10 +9,11 @@ function EA() {
   return (
     <div className="App">
       <div className="our-story">
+      <div className="forever">&#9901;</div>
         <div className="main-page-title">How We Met</div>
           <p className="main-page-text">We met in March 2019 at our friends’ (Aibika and Peter) house party. 
             We hit it off right away playing Connect 4, exchanged numbers, and went to our first date 3 days later. 
-            Erik took me to Crimson & Rye, a nice cocktail bar in UES, and the first date lasted 6 hours. 
+            Erik took me to Crimson &amp; Rye, a nice cocktail bar in UES, and the first date lasted 6 hours. 
             We went to 2 more dates the same week, that’s how you know you just met someone really special.
             It felt like a fairytale from the first date and it still feels the same way now!</p>
 
