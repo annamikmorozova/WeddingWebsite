@@ -17,7 +17,7 @@ export default class Routes extends Component {
 			<div>
 				<Navbar />
 				<Switch>
-					<Route exact path="/" component={EA} />
+					<Route exact path="/home" component={EA} />
 					<Route exact path="/registry" component={Registry} />
 					<Route exact path="/song-request" component={Song} />
 					<Route exact path="/rsvp" component={RSVP} />
