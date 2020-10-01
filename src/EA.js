@@ -32,12 +32,6 @@ function EA() {
             I think it is hard to meet someone who is very similar to you. Erik and I are like the same person, 
             but complete each other with the differences. We moved in together after 7 months of dating and every day has been the best so far.</p>
 
-        {/* <div className="images-row">
-          <img src={e1} alt="engagement1" className="images"/>
-          <img src={e5} alt="engagement5" className="images"/>
-          <img src={e3} alt="engagement3" className="images"/>
-        </div> */}
-
         <h2 className="main-page-title">How He Asked</h2> 
       
         <p className="main-page-text">We had a Quarantine proposal! My sister came to stay with us for a few days and I had no idea Erik already had the ring. 
