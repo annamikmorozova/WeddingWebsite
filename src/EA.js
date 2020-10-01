@@ -1,7 +1,11 @@
 import React from 'react';
 import './App.css';
-import washingtonDC from "./washingtonDC.JPG";
-import inPark from "./park.png";
+import e1 from "./e1.JPEG"
+import e3 from "./e3.JPEG";
+import e4 from "./e4.JPEG";
+import e5 from "./e5.JPG";
+import e6 from "./e6.JPG";
+import e2 from "./e2.JPEG";
 import Footer from "./Footer";
 
 function EA() {
@@ -10,27 +14,37 @@ function EA() {
     <div className="App">
       <div className="our-story">
       <div className="forever">&#9901;</div>
+        
         <div className="main-page-title">How We Met</div>
+        
+        <img src={e2} alt="engagement1" align="right" className="images3"/>
+          
           <p className="main-page-text">We met in March 2019 at our friends’ (Aibika and Peter) house party. 
             We hit it off right away playing Connect 4, exchanged numbers, and went to our first date 3 days later. 
             Erik took me to Crimson &amp; Rye, a nice cocktail bar in UES, and the first date lasted 6 hours. 
             We went to 2 more dates the same week, that’s how you know you just met someone really special.
             It felt like a fairytale from the first date and it still feels the same way now!</p>
-
+          
+          <img src={e1} alt="engagement1" className="images4" align="left" />
+          
           <p className="main-page-text">Erik quickly became my best friend. We told each other I love you on the field in Central Park. 
             We did everything you could imagine together from concerts and trips to rock climbing and 5k runs. 
             I think it is hard to meet someone who is very similar to you. Erik and I are like the same person, 
             but complete each other with the differences. We moved in together after 7 months of dating and every day has been the best so far.</p>
 
-        <div className="images-row">
-          <img src={inPark} alt="inPark" className="images"/>
-          <img src={washingtonDC} alt="washingtonDC" className="images"/>
-        </div>
+        {/* <div className="images-row">
+          <img src={e1} alt="engagement1" className="images"/>
+          <img src={e5} alt="engagement5" className="images"/>
+          <img src={e3} alt="engagement3" className="images"/>
+        </div> */}
 
         <h2 className="main-page-title">How He Asked</h2> 
+      
         <p className="main-page-text">We had a Quarantine proposal! My sister came to stay with us for a few days and I had no idea Erik already had the ring. 
           I always wanted Alisa to see me getting engaged. 
           It was our third work-from-home week since NYC was shut down and I was sure he didn’t even think about it yet.</p>
+        
+        <img src={e5} alt="engagement5" className="images5" align="right"/>
         
         <p className="main-page-text">Since the quarantine started, we tried going for runs and walks to stay healthy when the weather would allow. 
           It was 70 degrees that Friday and it seemed like a perfect day to go for a run. 
@@ -57,6 +71,12 @@ function EA() {
 
         <p className="main-page-text">We went for a walk, after all, got some beers, and took a lot of pictures (Thank you, Alisa). 
           We also got champagne to return to our rooftop and celebrate with the sunset.</p>
+
+        <div className="images-row">
+          <img src={e4} alt="engagement4" className="images2"/>
+          <img src={e6} alt="engagement6" className="images2"/>
+        </div>
+
       </div>
         <Footer />
     </div>

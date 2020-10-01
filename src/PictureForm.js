@@ -49,7 +49,7 @@ export default class PictureForm extends React.Component {
             return <Redirect to="/another-picture" />
         }
         return (
-            <div class="click-animations">
+            <div className="click-animations">
                 <div className="form-background">
                     <h2 class="new-section">Submit a picture with us</h2>
                     <form className="pictures-form" onSubmit={this.handleSubmit}>

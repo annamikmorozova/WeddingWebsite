@@ -26,6 +26,7 @@ export default class Routes extends Component {
 					<Route exact path="/another-song" component={AnotherSong} />
 					<Route exact path="/another-picture" component={AnotherPicture} />
 				</Switch>
+					<Route exact path="/" component={EA} />
 			</div>
 		);
 	}
