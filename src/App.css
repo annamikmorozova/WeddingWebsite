@@ -311,7 +311,9 @@
 .click-animations button {
   display: block;
   margin: 20px auto;
-  padding: 10px;
+  padding: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 20px;
   border: none;
   outline: none;
