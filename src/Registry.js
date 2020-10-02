@@ -4,12 +4,10 @@ import amazonRegistry from "./amazon-registry.png";
 import bloomies from "./bloomingdales.jpg";
 import vacay from "./vacay.jpg";
 import {RiHeartsLine} from "react-icons/ri";
-import {SiChase} from "react-icons/si";
-import { Icon, InlineIcon } from '@iconify/react';
-import venmoIcon from '@iconify/icons-mdi/venmo';
-import {RiMoneyDollarBoxLine} from "react-icons/ri";
 import Footer from "./Footer";
 import {Col, Row} from "react-bootstrap";
+import { SiVenmo, SiChase } from 'react-icons/si';
+import { GiMoneyStack } from 'react-icons/gi';
 
 export default function Registry() {
 
@@ -30,7 +28,7 @@ export default function Registry() {
                 </Col>
                 <Col className="honeymoon-style">
                     <div className="venmo-col">
-                        <Icon icon={venmoIcon} color="navy" width="32px" height="42px" />
+                        <SiVenmo color="navy" size={55}/>
                         <a href="https://venmo.com/" target="_blank" rel="noopener noreferrer" className="cash-options">@Erik-Yeomans</a>
                     </div>
 
@@ -40,7 +38,7 @@ export default function Registry() {
                     </div>
 
                     <div className="venmo-col">
-                        <RiMoneyDollarBoxLine color="navy" size={32}/>
+                        <GiMoneyStack color="navy" size={42}/>
                         <div className="cash-options">Cash/Check is very appreciated</div>
                     </div>
                 </Col>
