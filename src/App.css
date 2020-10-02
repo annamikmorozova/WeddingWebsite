@@ -286,7 +286,7 @@
   margin: 20px auto;
   padding: 10px;
   width: 50%;
-  font-size: 22px;
+  font-size: 15px;
   outline: none;
   transition: 0.3s;
 }
@@ -394,7 +394,7 @@
 }
 
 .file-input {
-  font-size: 22px;
+  font-size: 12px;
 }
 
 .form-background {
@@ -436,8 +436,6 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: 30px;
-    margin-left: 30px;
   }
 }
 
@@ -463,14 +461,22 @@
 }
 
 .vacay-img {
-  height: 300px;
+  height: 230px;
   border-radius: 90%;
   box-shadow: 10px 15px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+@media (min-width: 700px) {
+  .vacay-img {
+    height: 300px;
+    border-radius: 90%;
+    box-shadow: 10px 15px 9px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
 .vacay-col {
- margin-left: 30px;
- margin-right: 30px;
+ margin-left: 10px;
+ margin-right: 10px;
  text-align: center;
 }
 

@@ -54,16 +54,16 @@ export default class PictureForm extends React.Component {
                     <h2 class="new-section">Submit a picture with us</h2>
                     <form className="pictures-form" onSubmit={this.handleSubmit}>
 
-                    <label className="labels-text" htmlFor="description">Tell us about the picture</label>
-                        <input 
-                            id="description" 
-                            type="text" 
-                            name="description"
-                            required=""
-                            placeholder="Where and when was it?" 
-                            value={this.state.description}
-                            onChange={this.handleInputChange}
-                        />
+                        <label className="labels-text" htmlFor="description">Tell us about the picture</label>
+                            <input 
+                                id="description" 
+                                type="text" 
+                                name="description"
+                                required=""
+                                placeholder="Where and when was it?" 
+                                value={this.state.description}
+                                onChange={this.handleInputChange}
+                            />
                     
                    
                         <label className="labels-text" htmlFor="img">Select Image</label>
@@ -78,7 +78,7 @@ export default class PictureForm extends React.Component {
                                 onChange={this.handleFileChange}
                             />
 
-	                        <button>Send</button>
+	                    <button>Send</button>
                     </form>
                 </div>
                 <Footer />

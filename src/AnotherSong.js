@@ -26,13 +26,13 @@ export default class AnotherSong extends React.Component {
         }
         return (
             <div className="click-animations">
-                    <div className="form-background">
-                        <h2 className="new-section">Would you like to submit another song?</h2>
-                        <div className="new-section-2"><FaRegLaughWink color="navy"/></div>
-                        <button type="submit" onClick={(event) => this.handleSubmit(event)}>DO IT!</button>
-                    </div>
-                    <Footer />
+                <div className="form-background">
+                    <h2 className="new-section">Would you like to submit another song?</h2>
+                    <div className="new-section-2"><FaRegLaughWink color="navy"/></div>
+                    <button type="submit" onClick={(event) => this.handleSubmit(event)}>DO IT!</button>
                 </div>
+                <Footer />
+            </div>
         )
     }
 }

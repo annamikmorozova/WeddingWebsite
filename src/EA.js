@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import e1 from "./e1.JPEG"
-import e3 from "./e3.JPEG";
 import e4 from "./e4.JPEG";
 import e5 from "./e5.JPG";
 import e6 from "./e6.JPG";
