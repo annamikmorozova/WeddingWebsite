@@ -5,7 +5,7 @@ import bloomies from "./bloomingdales.jpg";
 import vacay from "./vacay.jpg";
 import {RiHeartsLine} from "react-icons/ri";
 import {SiChase} from "react-icons/si";
-import { Icon } from '@iconify/react';
+import { Icon, InlineIcon } from '@iconify/react';
 import venmoIcon from '@iconify/icons-mdi/venmo';
 import {RiMoneyDollarBoxLine} from "react-icons/ri";
 import Footer from "./Footer";
