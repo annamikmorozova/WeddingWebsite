@@ -52,6 +52,8 @@ const createApp = () => {
 	app.use(passport.initialize());
 	app.use(passport.session());
 
+
+	app.use(express.static(path.join(__dirname, "..", 'build')));
 	app.use(express.static(path.join(__dirname, "..", "public")));
 	app.use(express.static(path.join(__dirname, "..", "uploads")));
 
@@ -68,7 +70,7 @@ const createApp = () => {
 	app.use("/api", require("./api"));
 
 	app.use("*", (req, res) => {
-		res.sendFile(path.join(__dirname, "..", "public/index.html"));
+		res.sendFile(path.join(__dirname, "..", "build/index.html"));
 	});
 
 	app.use((err, req, res, next) => {
