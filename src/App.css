@@ -17,6 +17,15 @@
   }
 }
 
+.all-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.one-image {
+  margin: 10px;
+}
+
 .header-container {
   background-color: #000067;
   display: flex;
