@@ -22,7 +22,7 @@ export default class DisplayImages extends React.Component {
                 {this.state.images.map(image => (
                     <div className="all-images">
                         <Col key={image.id}>
-                            <img className="one-image" alt={image.imageName} src={`/${image.imageName.slice(7)}`} />
+                            <img className="one-image" alt={image.imageTitle.slice(8)} src={`/${image.imageName.slice(8)}`} />
                             <div>{image.description}</div>
                         </Col>
                     </div>

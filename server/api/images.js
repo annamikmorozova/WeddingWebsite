@@ -29,7 +29,7 @@ router.post("/", upload.single("image"), async (req, res, next) => {
 	}
 });
 
-router.get("/", upload.single("image"), async (req, res, next) => {
+router.get("/", async (req, res, next) => {
 	try {
 		const images = await Image.findAll();
 		res.json(images);
