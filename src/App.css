@@ -214,10 +214,6 @@
   width: 400px;
 }
 
-.images2:hover {
-  width: 500px;
-}
-
 .images-row {
   display: flex;
   justify-content: center;
