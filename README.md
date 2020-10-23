@@ -1,3 +1,3 @@
 # Wedding Website of Erik and Anna
 
-This is a website for our wedding
+The website's users can view the wedding venue and its location, registry information, submit a song and a picture.
