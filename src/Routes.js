@@ -10,6 +10,7 @@ import PictureForm from "./PictureForm";
 import AnotherSong from "./AnotherSong";
 import AnotherPicture from "./AnotherPicture";
 import DisplayImages from "./DisplayImages";
+import WeddingParty from "./WeddingParty";
 
 export default class Routes extends Component {
 
@@ -26,6 +27,7 @@ export default class Routes extends Component {
 					<Route exact path="/submit-a-picture" component={PictureForm} />
 					<Route exact path="/another-song" component={AnotherSong} />
 					<Route exact path="/another-picture" component={AnotherPicture} />
+					<Route exact path="/wedding-party" component={WeddingParty} />
 					<Route exact path="/all-images" component={DisplayImages} />
 				</Switch>
 					<Route exact path="/" component={EA} />
