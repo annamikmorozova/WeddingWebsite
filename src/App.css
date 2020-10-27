@@ -22,8 +22,18 @@
   flex-wrap: wrap;
 }
 
+.img-col {
+  display: grid;
+  justify-content: center;
+}
+
+.text-img {
+  text-align: center;
+}
+
 .one-image {
   margin: 10px;
+  max-height: 300px;
 }
 
 .header-container {
@@ -127,7 +137,7 @@
   font-size: 28px;
 }
 
-@media(min-width: 655px) {
+@media(min-width: 806px) {
   .row-navbar {
     justify-content: center;
     flex-direction: row;

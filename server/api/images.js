@@ -1,15 +1,15 @@
 const router = require("express").Router();
 const multer = require("multer");
 const {Image} = require("../db/models");
+const cloudinary = require("cloudinary").v2;
+const {CloudinaryStorage} = require("multer-storage-cloudinary");
 
-const storage = multer.diskStorage({
-	destination: (req, file, cb) => {
-		cb(null, "./uploads");
-	},
-	filename: (req, file, cb) => {
-		cb(null, `${file.fieldname}_${+new Date()}.jpg`);
+const storage = new CloudinaryStorage({
+	cloudinary: cloudinary,
+	params: {
+		folder: () => "wedding-website"
 	}
-});
+})
 
 const upload = multer({
 	storage
@@ -17,11 +17,10 @@ const upload = multer({
 
 router.post("/", upload.single("image"), async (req, res, next) => {
 	try {
-		const path = req.file.path;
 		const {description} = req.body;
 		const entry = await Image.create({
 			description,
-			imageName: path
+			imageName: req.file.path
 		});
 		res.json(entry);
 	} catch (error) {
