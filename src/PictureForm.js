@@ -22,7 +22,6 @@ export default class PictureForm extends React.Component {
         const form = new FormData();
         form.append("description", this.state.description);
         form.append("image", this.state.image);
-        console.log(...form.entries())
         await axios({
             method: "post",
             url: "/api/images",
