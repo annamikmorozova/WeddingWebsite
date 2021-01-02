@@ -63,7 +63,7 @@
   display: flex;
   justify-content: center;
   font-family: "Cabin", regular;
-  font-size: 32px;
+  font-size: 41px;
 }
 
 .forever {
@@ -89,7 +89,7 @@
   display: flex;
   justify-content: center;
   font-family: "Cabin", regular;
-  font-size: 25px;
+  font-size: 41px;
 }
 
 .registry-title-2 {
@@ -98,7 +98,7 @@
   display: flex;
   justify-content: center;
   font-family: "Cabin", regular;
-  font-size: 25px;
+  font-size: 41px;
 }
 
 .date {
@@ -359,12 +359,12 @@
   margin-bottom: 20px;
 }
 
-.title-glen-cove {
+.title-glen-cove, .party-page-title {
   margin: 20px;
   display: flex;
   justify-content: center;
   font-family: "Cabin", regular;
-  font-size: 32px;
+  font-size: 41px;
 }
 
 .check-out-venue {
@@ -499,4 +499,23 @@
 
 .honeymoon-style {
   text-align: center;
+}
+
+.party-col {
+  display: grid;
+  justify-content: center;
+  margin: 40px;
+}
+
+.party-p {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: oblique;
+  font-family: "Cabin", regular;
+  text-decoration: underline #D39286;
+}
+
+.party-people {
+  font-family: "Cabin", regular;
+  font-size: x-large;
 }

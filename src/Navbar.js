@@ -11,6 +11,7 @@ function Navbar() {
       </img>
       <div className="row-navbar">
           <NavLink to="/home" className="navbar-style grow">Erik + Anna</NavLink>
+          <NavLink to="/wedding-party" className="navbar-style grow">Wedding Party</NavLink>
           <NavLink to="/venue" className="navbar-style grow">Venue</NavLink>
           <NavLink to="/registry" className="navbar-style grow">Registry</NavLink>
           <NavLink to="/song-request" className="navbar-style grow">Submit a song</NavLink>
