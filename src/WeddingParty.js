@@ -27,7 +27,7 @@ export default class WeddingParty extends React.Component {
                         <p className="party-people">Raul Martinez</p>
                         <p className="party-people">Isaac Reath</p>
                         <p className="party-people">Jason Yeomans</p>
-                        <p className="party-people">Taylor Yeomans</p>
+                        <p className="party-people">Tyler Yeomans</p>
                         <p className="party-people">Ryan Peden</p>
                     </Col>
                 </Row>
